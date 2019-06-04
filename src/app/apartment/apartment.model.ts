@@ -1,6 +1,6 @@
 
 
-export interface Restaurant{
+export interface Apartment{
 
     id: string;
     name: string;
