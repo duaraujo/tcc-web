@@ -11,7 +11,7 @@ import { AboutComponent } from './about/about.component'
 import { ROUTES } from './app.routes';
 import { ApartmentComponent } from './apartment/apartment.component';
 import { ApartmentsComponent } from './apartment/apartments/apartments.component';
-import { Apartmentservice } from './apartment/apartment.service';
+import { ApartmentService } from './apartment/apartment.service';
 
 
 @NgModule({
@@ -28,7 +28,7 @@ import { Apartmentservice } from './apartment/apartment.service';
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [Apartmentservice],
+  providers: [ApartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

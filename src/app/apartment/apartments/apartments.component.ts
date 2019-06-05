@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Apartment } from '../apartment.model';
-import { Apartmentservice } from '../apartment.service';
+import { ApartmentService } from '../apartment.service';
 
 @Component({
   selector: 'app-apartments',
@@ -10,10 +10,11 @@ export class ApartmentsComponent implements OnInit {
 
   apartments: Apartment[];
 
-  constructor(private service: Apartmentservice) { }
+  constructor(private service: ApartmentService) { }
 
   ngOnInit() {
-    this.apartments = this.service.getapartments();
+    this.service.getApartments()
+      .subscribe(apartments => this.apartments = apartments)
   }
 
 }

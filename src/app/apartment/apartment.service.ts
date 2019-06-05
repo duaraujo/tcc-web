@@ -1,50 +1,18 @@
 import { Apartment } from './apartment.model';
 import { Injectable } from "@angular/core";
+import { Http } from '@angular/http';
+import { API_BACKEND } from 'app/app.api';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 
 
 @Injectable()
-export class Apartmentservice {
+export class ApartmentService {
 
-    apartments: Apartment[];
+    constructor(private http: Http) { }
 
-    constructor() { }
-
-    public getapartments() {
-        this.apartments = [
-            {
-                id: "bread-bakery",
-                name: "Bloco-1A",
-                category: "Bakery",
-                deliveryEstimate: "25m",
-                rating: 4.9,
-                imagePath: "assets/img/apartments/apartment01.png",                
-            },
-            {
-                id: "burger-house",
-                name: "Bloco-1B",
-                category: "Hamburgers",
-                deliveryEstimate: "100m",
-                rating: 3.5,
-                imagePath: "assets/img/apartments/apartment01.png",                
-            },
-            {
-                id: "bread-bakery",
-                name: "Blobo-2A",
-                category: "Bakery",
-                deliveryEstimate: "25m",
-                rating: 4.9,
-                imagePath: "assets/img/apartments/apartment01.png",                
-            },
-            {
-                id: "burger-house",
-                name: "Bloco-2B",
-                category: "Hamburgers",
-                deliveryEstimate: "100m",
-                rating: 3.5,
-                imagePath: "assets/img/apartments/apartment01.png",                
-            }
-        ]
-        return this.apartments;
+    getApartments(): Observable<Apartment[]>{
+        return this.http.get(API_BACKEND + "/apartments").map(response => response.json())
     }
 
 }
