@@ -5,13 +5,13 @@ import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component'
+import { HeaderComponent } from './view/header/header.component';
+import { HomeComponent } from './view/home/home.component';
+import { AboutComponent } from './view/about/about.component'
 import { ROUTES } from './app.routes';
-import { ApartmentComponent } from './apartment/apartment.component';
-import { ApartmentsComponent } from './apartment/apartments/apartments.component';
-import { ApartmentService } from './apartment/apartment.service';
+import { ApartmentComponent } from './view/apartment/apartment.component';
+import { ApartmentsComponent } from './view/apartment/apartments/apartments.component';
+import { ApartmentService } from './service/apartment.service';
 
 
 @NgModule({

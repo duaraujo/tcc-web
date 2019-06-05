@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Apartment } from '../apartment.model';
-import { ApartmentService } from '../apartment.service';
+
+import { Apartment } from '../../../model/apartment.model';
+import { ApartmentService } from '../../../service/apartment.service';
 
 
 @Component({

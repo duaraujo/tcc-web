@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Apartment } from './apartment.model';
+
+import { Apartment } from '../../model/apartment.model';
 
 @Component({
   selector: 'app-apartment',

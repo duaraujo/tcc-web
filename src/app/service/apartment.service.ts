@@ -1,10 +1,11 @@
-import { Apartment } from './apartment.model';
 import { Injectable } from "@angular/core";
 import { Http } from '@angular/http';
 import { API_BACKEND } from 'app/app.api';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+
+import { Apartment } from '../model/apartment.model';
 import { ErrorHandler } from 'app/app.error.handler';
 
 
@@ -18,6 +19,5 @@ export class ApartmentService {
             .map(response => response.json())
             .catch(ErrorHandler.handleEnrror)
     }
-
 
 }
