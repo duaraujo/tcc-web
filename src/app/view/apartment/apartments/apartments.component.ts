@@ -12,10 +12,10 @@ export class ApartmentsComponent implements OnInit {
 
   apartments: Apartment[];
 
-  constructor(private service: ApartmentService) { }
+  constructor(private serviceApartment: ApartmentService) { }
 
   ngOnInit() {
-    this.service.getApartments()
+    this.serviceApartment.findAll()
       .subscribe(apartments => this.apartments = apartments)     
   }
 

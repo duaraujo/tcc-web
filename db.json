@@ -1,64 +1,64 @@
 {
   "apartments": [
     {
-      "id": "bread-bakery",
+      "id": "bloco1a",
       "name": "Bloco-1A",
-      "category": "Bakery",
+      "floor": "6",
       "deliveryEstimate": "25m",
       "rating": 4.9,
       "imagePath": "assets/img/apartments/apartment.png",
-      "about": "A Bread & Brakery tem 40 anos de mercado. Fazemos os melhores doces e pães. Compre e confira.",
-      "hours": "Funciona de segunda à sexta, de 8h às 23h"
+      "qtdeApartments": "24",
+      "qtdeResidents": "28"
     },
     {
-      "id": "burger-house",
+      "id": "bloco1b",
       "name": "Bloco-1B",
-      "category": "Hamburgers",
+      "floor": "8",
       "deliveryEstimate": "100m",
       "rating": 3.5,
       "imagePath": "assets/img/apartments/apartment.png",
-      "about": "40 anos se especializando em trash food.",
-      "hours": "Funciona todos os dias, de 10h às 22h"
+      "qtdeApartments": "32",
+      "qtdeResidents": "30"
     },
     {
-      "id": "coffee-corner",
+      "id": "bloco2a",
       "name": "Blobo-2A",
-      "category": "Coffee Shop",
+      "floor": "10",
       "deliveryEstimate": "30-40m",
       "rating": 4.8,
       "imagePath": "assets/img/apartments/apartment.png",
-      "about": "A Coffe Corner foi eleita a melhor cafeteria da cidade.",
-      "hours": "Funciona de segunda à sábado, de 6h às 22h"
+      "qtdeApartments": "40",
+      "qtdeResidents": "55"
     },
     {
-      "id": "green-food",
+      "id": "bloco2b",
       "name": "Bloco-2B",
-      "category": "Saudável",
+      "floor": "12",
       "deliveryEstimate": "75m",
       "rating": 4.1,
       "imagePath": "assets/img/apartments/apartment.png",
-      "about": "Comida saudável é no Green Food. Compramos barato, vendemos caro. ;)",
-      "hours": "Somente em horário de almoço, das 11h às 15h"
+      "qtdeApartments": "48",
+      "qtdeResidents": "40"
     },
     {
-      "id": "ice-cream",
+      "id": "bloco3a",
       "name": "Blobo-3A",
-      "category": "Ice Creams",
+      "floor": "5",
       "deliveryEstimate": "40-65m",
       "rating": 4.5,
       "imagePath": "assets/img/apartments/apartment.png",
-      "about": "A Ice Cream é uma sorveteria inovadora.",
-      "hours": "Funciona todos os dias, de 10h às 1h"
+      "qtdeApartments": "10",
+      "qtdeResidents": "16"
     },
     {
-      "id": "tasty-treats",
-      "name": "Blobo 3B",
-      "category": "Doces",
+      "id": "bloco3b",
+      "name": "Blobo-3B",
+      "floor": "6",
       "deliveryEstimate": "20m",
       "rating": 4.4,
       "imagePath": "assets/img/apartments/apartment.png",
-      "about": "A doceria com mais tradição da cidade",
-      "hours": "Funciona de segunda à sábado, de 8h às 23h"
+      "qtdeApartments": "12",
+      "qtdeResidents": "10"
     }
   ],
 
@@ -69,7 +69,7 @@
       "name": "Cup Cake",
       "description": "Cup Cake recheado de Doce de Leite",
       "price": 8.7,
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "id": "donut",
@@ -77,7 +77,7 @@
       "name": "Donut",
       "description": "Coberto com chantilly",
       "price": 2.5,
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "id": "bread",
@@ -85,7 +85,7 @@
       "name": "Pão Artesanal Italiano",
       "description": "Pão artesanal com queijos italianos",
       "price": 15.9,
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "id": "burger",
@@ -93,7 +93,7 @@
       "name": "Classic Burger",
       "description": "O clássico. Não tem como errar.",
       "price": 18.5,
-      "apartmentId": "burger-house"
+      "apartmentId": "bloco1b"
     },
     {
       "id": "fries",
@@ -101,7 +101,7 @@
       "name": "Batatas Fritas",
       "description": "Batatas fritas crocantes",
       "price": 5.5,
-      "apartmentId": "burger-house"
+      "apartmentId": "bloco1b"
     },
     {
       "id": "coke.png",
@@ -109,7 +109,7 @@
       "name": "Refrigerante",
       "description": "O refri mais gelado da cidade.",
       "price": 4.5,
-      "apartmentId": "burger-house"
+      "apartmentId": "bloco1b"
     },
     {
       "id": "capp",
@@ -117,7 +117,7 @@
       "name": "Cappuccino com Chantilly",
       "description": "Tradicional cappuccino com chantilly",
       "price": 9.9,
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "id": "espreso",
@@ -125,7 +125,7 @@
       "name": "Super Espreso",
       "description": "Café espresso duplo. ",
       "price": 12.5,
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "id": "starb",
@@ -133,7 +133,7 @@
       "name": "Starbucks Copycat",
       "description": "O mais pedido da casa. O verdadeiro café americano pura água.",
       "price": 15.6,
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "id": "zlasagna",
@@ -141,7 +141,7 @@
       "name": "Lasagna de Zucchini",
       "description": "Lasagna deliciosa que se salva por causa do queijo",
       "price": 14.9,
-      "apartmentId": "green-food"
+      "apartmentId": "bloco2b"
     },
     {
       "id": "greensandwich",
@@ -149,7 +149,7 @@
       "name": "Sanduíche de Frango",
       "description": "Frango grelhado e salada",
       "price": 10.5,
-      "apartmentId": "green-food"
+      "apartmentId": "bloco2b"
     },
     {
       "id": "ceasar",
@@ -157,7 +157,7 @@
       "name": "Salada Ceasar",
       "description": "Clássica salada ceasar.",
       "price": 33.9,
-      "apartmentId": "green-food"
+      "apartmentId": "bloco2b"
     },
     {
       "id": "sunday",
@@ -165,7 +165,7 @@
       "name": "Mega Sunday",
       "description": "Sunday com várias bolas de sorvete a sua escolha",
       "price": 21.5,
-      "apartmentId": "ice-cream"
+      "apartmentId": "bloco3a"
     },
     {
       "id": "chocpop",
@@ -173,7 +173,7 @@
       "name": "Picolé de Brigadeiro",
       "description": "Picolé de brigadeiro recheado com côco.",
       "price": 8.5,
-      "apartmentId": "ice-cream"
+      "apartmentId": "bloco3a"
     },
     {
       "id": "icestd.png",
@@ -181,7 +181,7 @@
       "name": "Sorvete Simples",
       "description": "Clássico sorvete de rua onde todos os sabores são idênticos.",
       "price": 1.5,
-      "apartmentId": "ice-cream"
+      "apartmentId": "bloco3a"
     },
     {
       "id": "cup",
@@ -189,7 +189,7 @@
       "name": "Cup Cake de Choc. Branco",
       "description": "Cup Cake de chocolate branco",
       "price": 5.5,
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "id": "straw",
@@ -197,7 +197,7 @@
       "name": "Bolo de Morango",
       "description": "Bolo recheado e coberto com morangos",
       "price": 40.5,
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "id": "cake",
@@ -205,7 +205,7 @@
       "name": "Fatia de Bolo",
       "description": "Fatia de bolo de morango",
       "price": 5.9,
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     }
   ],
 
@@ -215,161 +215,161 @@
       "date": "2017-01-23T18:25:43",
       "rating": 4.5,
       "comments": "Tudo muito bom, entrega no tempo certo",
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "name": "Aline",
       "date": "2016-12-12T18:25:43",
       "rating": 3,
       "comments": "NÃO recomendo. O recheio é só um creme, não tem camarão e nem carne",
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "name": "Renata",
       "date": "2016-12-12T18:25:43",
       "rating": 2,
       "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "name": "Renata",
       "date": "2016-12-12T18:25:43",
       "rating": 5,
       "comments": "Nunca deixou na mão, comida sempre deliciosa.",
-      "apartmentId": "bread-bakery"
+      "apartmentId": "bloco1a"
     },
     {
       "name": "Daniela",
       "date": "2017-01-23T18:25:43",
       "rating": 4,
       "comments": "Sanduíche muito bom! Já pedi diversas vezes sempre bom!",
-      "apartmentId": "burger-house"
+      "apartmentId": "bloco1b"
     },
     {
       "name": "Laila",
       "date": "2017-02-02T18:25:43",
       "rating": 5,
       "comments": "Melhor hambúrguer que já provei. Vai ser difícil voltar para mc e bk",
-      "apartmentId": "burger-house"
+      "apartmentId": "bloco1b"
     },
     {
       "name": "Suzana",
       "date": "2016-12-12T18:25:43",
       "rating": 3.5,
       "comments": "Meu sanduíche chegou frio e todo desmontado =\\",
-      "apartmentId": "burger-house"
+      "apartmentId": "bloco1b"
     },
     {
       "name": "Eric",
       "date": "2017-01-23T18:25:43",
       "rating": 4.5,
       "comments": "Excelente opção! Recomendo!",
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "name": "Amanda",
       "date": "2017-02-02T18:25:43",
       "rating": 2.5,
       "comments": "Demorou muito e o café veio gelado",
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "name": "Carla",
       "date": "2016-12-12T18:25:43",
       "rating": 4.8,
       "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "name": "Rodrigo",
       "date": "2016-12-12T18:25:43",
       "rating": 4,
       "comments": "Muito rápida a entrega, mas é caro.",
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "name": "André",
       "date": "2016-12-12T18:25:43",
       "rating": 4.5,
       "comments": "Excelente como sempre!",
-      "apartmentId": "coffee-corner"
+      "apartmentId": "bloco2a"
     },
     {
       "name": "João",
       "date": "2017-01-23T18:25:43",
       "rating": 5,
       "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
-      "apartmentId": "green-food"
+      "apartmentId": "bloco2b"
     },
     {
       "name": "Marcelo",
       "date": "2017-02-02T18:25:43",
       "rating": 4.5,
       "comments": "Chegou muito rápido, antes mesmo da previsão",
-      "apartmentId": "green-food"
+      "apartmentId": "bloco2b"
     },
     {
       "name": "Fatinha",
       "date": "2017-01-23T18:25:43",
       "rating": 2,
       "comments": "Ñ gostei dos sabores q pedi e achei o preço muito elevado",
-      "apartmentId": "ice-cream"
+      "apartmentId": "bloco3a"
     },
     {
       "name": "Lucas",
       "date": "2017-02-02T18:25:43",
       "rating": 2.5,
       "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
-      "apartmentId": "ice-cream"
+      "apartmentId": "bloco3a"
     },
     {
       "name": "Jacira",
       "date": "2017-02-01T18:25:43",
       "rating": 4.5,
       "comments": "Veio OK!",
-      "apartmentId": "ice-cream"
+      "apartmentId": "bloco3a"
     },
     {
       "name": "Ana",
       "date": "2017-01-23T18:25:43",
       "rating": 5,
       "comments": "Rápido e sempre uma delicia!! Ja pedi 3x e sempre veio rapido e tudo certinho.",
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "name": "Larissa",
       "date": "2017-02-02T18:25:43",
       "rating": 2.5,
       "comments": "A taxa de entrega poderia ser mais barata.",
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "name": "Jarbas",
       "date": "2016-12-15T18:25:43",
       "rating": 4.7,
       "comments": "Excelente e chegou muito rápido!",
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "name": "Rafaela",
       "date": "2017-01-12T18:25:43",
       "rating": 5,
       "comments": "Chegou rápido e perfeito!",
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "name": "Julia",
       "date": "2016-12-12T18:25:43",
       "rating": 1.5,
       "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     },
     {
       "name": "Marília",
       "date": "2016-12-20T18:25:43",
       "rating": 4.5,
       "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
-      "apartmentId": "tasty-treats"
+      "apartmentId": "bloco3b"
     }
   ],
   "orders": []

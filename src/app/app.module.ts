@@ -12,6 +12,8 @@ import { ROUTES } from './app.routes';
 import { ApartmentComponent } from './view/apartment/apartment.component';
 import { ApartmentsComponent } from './view/apartment/apartments/apartments.component';
 import { ApartmentService } from './service/apartment.service';
+import { ResidentListComponent } from './view/resident/resident-list/resident-list.component';
+import { ApartmentDatailComponent } from './view/apartment/apartment-datail/apartment-datail.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ApartmentService } from './service/apartment.service';
     HomeComponent,
     AboutComponent,
     ApartmentsComponent,
-    ApartmentComponent
+    ApartmentComponent,
+    ResidentListComponent,
+    ApartmentDatailComponent
   ],
   imports: [
     BrowserModule,
