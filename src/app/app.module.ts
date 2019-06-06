@@ -1,3 +1,4 @@
+import { BlocksComponent } from './view/block/blocks/blocks.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -8,10 +9,9 @@ import { HeaderComponent } from './view/header/header.component';
 import { HomeComponent } from './view/home/home.component';
 import { AboutComponent } from './view/about/about.component'
 import { ROUTES } from './app.routes';
-import { ApartmentComponent } from './view/apartment/apartment.component';
-import { ApartmentsComponent } from './view/apartment/apartments/apartments.component';
-import { ApartmentService } from './service/apartment.service';
 import { ResidentListComponent } from './view/resident/resident-list/resident-list.component';
+import { BlockComponent } from './view/block/block.component';
+import { BlockService } from './service/block.service';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { ResidentListComponent } from './view/resident/resident-list/resident-li
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    ApartmentsComponent,
-    ApartmentComponent,
+    BlocksComponent,
+    BlockComponent,
     ResidentListComponent,
   ],
   imports: [
@@ -28,7 +28,7 @@ import { ResidentListComponent } from './view/resident/resident-list/resident-li
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ApartmentService],
+  providers: [BlockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

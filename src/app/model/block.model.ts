@@ -1,6 +1,5 @@
 
-
-export interface Apartment{
+export interface Block{
 
     id: string;
     name: string;
@@ -8,5 +7,4 @@ export interface Apartment{
     deliveryEstimate: string;
     rating: number;
     imagePath: string;
-
 }

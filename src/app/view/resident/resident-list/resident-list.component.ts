@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { ApartmentService } from 'app/service/apartment.service';
-import { Apartment } from 'app/model/apartment.model';
+import { BlockService } from 'app/service/block.service';
+import { Block } from 'app/model/block.model';
 
 @Component({
   selector: 'mt-resident-list',
@@ -11,14 +11,14 @@ import { Apartment } from 'app/model/apartment.model';
 })
 export class ResidentListComponent implements OnInit {
 
-  apartment: Apartment
+  block: Block
 
-  constructor(private serviceApartment: ApartmentService,
+  constructor(private serviceblock: BlockService,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.serviceApartment.findOne(this.route.snapshot.params['id'])
-      .subscribe(apartment => this.apartment = apartment)
+    this.serviceblock.findOne(this.route.snapshot.params['id'])
+      .subscribe(block => this.block = block)
   }
 
 }
