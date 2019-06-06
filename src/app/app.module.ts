@@ -13,6 +13,7 @@ import { ROUTES } from './app.routes';
 import { BlockComponent } from './view/block/block.component';
 import { BlockService } from './service/block.service';
 import { ApartmentService } from './service/apartment.service';
+import { ApartmentTemplateComponent } from './view/apartment/apartment-template/apartment-template.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ApartmentService } from './service/apartment.service';
     BlocksComponent,
     BlockComponent,
     ApartmentListComponent,
+    ApartmentTemplateComponent,
   ],
   imports: [
     BrowserModule,

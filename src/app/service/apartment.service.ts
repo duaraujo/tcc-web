@@ -11,8 +11,8 @@ export class ApartmentService {
 
   constructor(private http: Http) { }
 
-  findAllByBlock(blockId: string): Observable<Apartment>{
-    return this.http.get(`${API_BACKEND}apartment/${blockId}`)
+  findAll(): Observable<Apartment[]>{
+    return this.http.get(`${API_BACKEND}apartment`)
     .map(response => response.json())
     .catch(ErrorHandler.handleEnrror)
   }

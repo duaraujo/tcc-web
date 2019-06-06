@@ -1,3 +1,5 @@
+import { ApartmentService } from './../../../service/apartment.service';
+import { Apartment } from './../../../model/apartment.model';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -11,13 +13,25 @@ import { Block } from 'app/model/block.model';
 export class ApartmentListComponent implements OnInit {
 
   block: Block
+  apartments: Apartment[]
 
-  constructor(private serviceblock: BlockService,
-    private route: ActivatedRoute) { }
+  constructor(private serviceBlock: BlockService,
+              private route: ActivatedRoute,
+              private serviceApartment: ApartmentService) { }
 
   ngOnInit() {
-    this.serviceblock.findOne(this.route.snapshot.params['id'])
+    this.findOne();
+    this.findAll();
+  }
+
+  findOne(){
+    this.serviceBlock.findOne(this.route.snapshot.params['id'])
       .subscribe(block => this.block = block)
+  }
+
+  findAll(){
+    this.serviceApartment.findAll()
+      .subscribe(apartments => this.apartments = apartments) 
   }
 
 }
