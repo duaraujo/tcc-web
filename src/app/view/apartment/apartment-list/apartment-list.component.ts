@@ -5,11 +5,10 @@ import { BlockService } from 'app/service/block.service';
 import { Block } from 'app/model/block.model';
 
 @Component({
-  selector: 'mt-resident-list',
-  templateUrl: './resident-list.component.html',
-  styleUrls: ['./resident-list.component.css']
+  selector: 'app-apartment-list',
+  templateUrl: './apartment-list.component.html'
 })
-export class ResidentListComponent implements OnInit {
+export class ApartmentListComponent implements OnInit {
 
   block: Block
 

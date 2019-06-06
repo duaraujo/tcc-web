@@ -62,149 +62,113 @@
     }
   ],
 
-  "menu": [
+  "apartment": [
     {
       "id": "cup-cake",
-      "imagePath": "assets/img/foods/cupcake.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Cup Cake",
-      "description": "Cup Cake recheado de Doce de Leite",
-      "price": 8.7,
       "blockId": "bloco1a"
     },
     {
       "id": "donut",
-      "imagePath": "assets/img/foods/donut.png",
-      "name": "Donut",
-      "description": "Coberto com chantilly",
-      "price": 2.5,
+      "imagePath": "assets/img/blocks/block.png",
+      "name": "Donut",      
       "blockId": "bloco1a"
     },
     {
       "id": "bread",
-      "imagePath": "assets/img/foods/bread.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Pão Artesanal Italiano",
-      "description": "Pão artesanal com queijos italianos",
-      "price": 15.9,
       "blockId": "bloco1a"
     },
     {
       "id": "burger",
-      "imagePath": "assets/img/foods/burger.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Classic Burger",
-      "description": "O clássico. Não tem como errar.",
-      "price": 18.5,
       "blockId": "bloco1b"
     },
     {
       "id": "fries",
-      "imagePath": "assets/img/foods/fries.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Batatas Fritas",
-      "description": "Batatas fritas crocantes",
-      "price": 5.5,
       "blockId": "bloco1b"
     },
     {
       "id": "coke.png",
-      "imagePath": "assets/img/foods/coke.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Refrigerante",
-      "description": "O refri mais gelado da cidade.",
-      "price": 4.5,
       "blockId": "bloco1b"
     },
     {
       "id": "capp",
-      "imagePath": "assets/img/foods/capp.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Cappuccino com Chantilly",
-      "description": "Tradicional cappuccino com chantilly",
-      "price": 9.9,
       "blockId": "bloco2a"
     },
     {
       "id": "espreso",
-      "imagePath": "assets/img/foods/espreso.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Super Espreso",
-      "description": "Café espresso duplo. ",
-      "price": 12.5,
       "blockId": "bloco2a"
     },
     {
       "id": "starb",
-      "imagePath": "assets/img/foods/starb.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Starbucks Copycat",
-      "description": "O mais pedido da casa. O verdadeiro café americano pura água.",
-      "price": 15.6,
       "blockId": "bloco2a"
     },
     {
       "id": "zlasagna",
-      "imagePath": "assets/img/foods/zlasagna.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Lasagna de Zucchini",
-      "description": "Lasagna deliciosa que se salva por causa do queijo",
-      "price": 14.9,
       "blockId": "bloco2b"
     },
     {
       "id": "greensandwich",
-      "imagePath": "assets/img/foods/greensandwich.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Sanduíche de Frango",
-      "description": "Frango grelhado e salada",
-      "price": 10.5,
       "blockId": "bloco2b"
     },
     {
       "id": "ceasar",
-      "imagePath": "assets/img/foods/ceasar.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Salada Ceasar",
-      "description": "Clássica salada ceasar.",
-      "price": 33.9,
       "blockId": "bloco2b"
     },
     {
       "id": "sunday",
-      "imagePath": "assets/img/foods/sunday.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Mega Sunday",
-      "description": "Sunday com várias bolas de sorvete a sua escolha",
-      "price": 21.5,
       "blockId": "bloco3a"
     },
     {
       "id": "chocpop",
-      "imagePath": "assets/img/foods/chocpop.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Picolé de Brigadeiro",
-      "description": "Picolé de brigadeiro recheado com côco.",
-      "price": 8.5,
       "blockId": "bloco3a"
     },
     {
       "id": "icestd.png",
-      "imagePath": "assets/img/foods/icestd.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Sorvete Simples",
-      "description": "Clássico sorvete de rua onde todos os sabores são idênticos.",
-      "price": 1.5,
       "blockId": "bloco3a"
     },
     {
       "id": "cup",
-      "imagePath": "assets/img/foods/cup.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Cup Cake de Choc. Branco",
-      "description": "Cup Cake de chocolate branco",
-      "price": 5.5,
       "blockId": "bloco3b"
     },
     {
       "id": "straw",
-      "imagePath": "assets/img/foods/straw.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Bolo de Morango",
-      "description": "Bolo recheado e coberto com morangos",
-      "price": 40.5,
       "blockId": "bloco3b"
     },
     {
       "id": "cake",
-      "imagePath": "assets/img/foods/cake.png",
+      "imagePath": "assets/img/blocks/block.png",
       "name": "Fatia de Bolo",
-      "description": "Fatia de bolo de morango",
-      "price": 5.9,
       "blockId": "bloco3b"
     }
   ],
