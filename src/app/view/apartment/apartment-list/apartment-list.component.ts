@@ -34,4 +34,5 @@ export class ApartmentListComponent implements OnInit {
       .subscribe(apartments => this.apartments = apartments) 
   }
 
+
 }

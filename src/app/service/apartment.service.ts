@@ -17,4 +17,6 @@ export class ApartmentService {
     .catch(ErrorHandler.handleEnrror)
   }
 
+  
+
 }

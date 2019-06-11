@@ -1,9 +1,12 @@
-
 export class Resident{
-    id: string;
-    name: string;
-    apartament: string;
-    dtnasc: Date;
-    imagePath: string;
-    gender: string;
+    constructor(
+        public id: number,
+        public name: string,
+        public email: string,
+        public phone: string,
+        public imagePath: String = '',
+        public apartament: string,
+        public dtnasc: String,
+        public gender: string
+    ){}
 }

@@ -3,8 +3,8 @@ export interface Block{
 
     id: string;
     name: string;
-    category: string;
-    deliveryEstimate: string;
+    floor: number;
+    height: string;
     rating: number;
-    imagePath: string;
+    sendImage: string;
 }

@@ -2,7 +2,7 @@
 export interface Apartment{
 
     id: string;
-    name: string;
+    number: string;
     imagePath: string;
     blockId: string;
 

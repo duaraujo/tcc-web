@@ -14,6 +14,10 @@ import { BlockComponent } from './view/block/block.component';
 import { BlockService } from './service/block.service';
 import { ApartmentService } from './service/apartment.service';
 import { ApartmentTemplateComponent } from './view/apartment/apartment-template/apartment-template.component';
+import { ResidentComponent } from './view/resident/resident.component';
+import { MonitoringComponent } from './view/monitoring/monitoring.component';
+import { ResidentListComponent } from './view/resident/resident-list/resident-list.component';
+import { ResidentService } from './service/resident.service';
 
 @NgModule({
   declarations: [
@@ -25,13 +29,16 @@ import { ApartmentTemplateComponent } from './view/apartment/apartment-template/
     BlockComponent,
     ApartmentListComponent,
     ApartmentTemplateComponent,
+    ResidentComponent,
+    MonitoringComponent,
+    ResidentListComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [BlockService, ApartmentService],
+  providers: [BlockService, ApartmentService, ResidentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
