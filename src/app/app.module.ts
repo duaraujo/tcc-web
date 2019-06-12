@@ -18,6 +18,10 @@ import { ResidentComponent } from './view/resident/resident.component';
 import { MonitoringComponent } from './view/monitoring/monitoring.component';
 import { ResidentListComponent } from './view/resident/resident-list/resident-list.component';
 import { ResidentService } from './service/resident.service';
+import { RecognitionComponent } from './view/recognition/recognition/recognition.component';
+import { ResidentRegistryComponent } from './view/resident/resident-registry/resident-registry.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,9 +36,12 @@ import { ResidentService } from './service/resident.service';
     ResidentComponent,
     MonitoringComponent,
     ResidentListComponent,
+    RecognitionComponent,
+    ResidentRegistryComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],

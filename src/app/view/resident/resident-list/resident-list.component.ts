@@ -1,5 +1,6 @@
 import { ResidentService } from './../../../service/resident.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'mt-resident-list',
@@ -11,12 +12,16 @@ export class ResidentListComponent implements OnInit {
   public residents: any[] = [];
 
   constructor(
-    private residentsService: ResidentService
+    private residentsService: ResidentService,
+    private route: ActivatedRoute,
     ) { }
 
   ngOnInit() {
-    this.residents = this.residentsService.getResidents();
+    this.residentsService.findAllByAp(this.route.snapshot.params['id'])
+    .subscribe(data => this.residents = data); 
   }
+
+
 
   
 }

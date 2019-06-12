@@ -30,8 +30,8 @@ export class ApartmentListComponent implements OnInit {
   }
 
   findAll(){
-    this.serviceApartment.findAll()
-      .subscribe(apartments => this.apartments = apartments) 
+    this.serviceApartment.findAllByBlock(this.route.snapshot.params['id'])
+    .subscribe(data => this.apartments = data); 
   }
 
 

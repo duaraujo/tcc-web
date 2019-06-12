@@ -12,7 +12,13 @@ export class ApartmentService {
   constructor(private http: Http) { }
 
   findAll(): Observable<Apartment[]>{
-    return this.http.get(`${API_BACKEND}apartment`)
+    return this.http.get(`${API_BACKEND}apartments`)
+    .map(response => response.json())
+    .catch(ErrorHandler.handleEnrror)
+  }
+
+  findAllByBlock(id){
+    return this.http.get(`${API_BACKEND}apartments/block/${id}`)
     .map(response => response.json())
     .catch(ErrorHandler.handleEnrror)
   }

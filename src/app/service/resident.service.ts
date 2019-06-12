@@ -36,7 +36,13 @@ export class ResidentService {
   }
 
   findAll(): Observable<Resident[]>{
-    return this.http.get(`${API_BACKEND}resident`)
+    return this.http.get(`${API_BACKEND}residents`)
+    .map(response => response.json())
+    .catch(ErrorHandler.handleEnrror)
+  }
+
+  findAllByAp(id: number): Observable<Resident[]>{
+    return this.http.get(`${API_BACKEND}residents/ap/${id}`)
     .map(response => response.json())
     .catch(ErrorHandler.handleEnrror)
   }

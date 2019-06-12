@@ -1,0 +1,33 @@
+
+
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+    <h3>
+      Cadastrar Morador
+    </h3>
+  </section>
+  
+  <section class="content">
+  
+    <div class="row">
+      
+      
+      <div class="col-sm-6 col-xs-12">
+          <div id="app">
+              <button (click)="openCam()">Ligar Camera</button>  <br />
+            <div><video #video id="video" width="480" height="380" autoplay></video></div>
+              <div><button id="snap" (click)="capture()">Capturar</button></div>
+              <canvas #canvas id="canvas" width="540" height="380"></canvas> 
+              <ul>
+                  <li *ngFor="let c of captures">
+                      <img src="{{ c }}" height="50" />
+                  </li>
+              </ul>
+            </div>
+            
+      </div>
+  
+    </div>
+  
+  </section>
+
