@@ -1,0 +1,9 @@
+<h5>
+  Informações do morador
+</h5>
+
+<p>Id: {{ resident?.id }}</p>
+<p>nome: {{ resident?.name }}</p>
+<p>Email: {{ resident?.email }}</p>
+<p>Telefone: {{ resident?.phone }}</p>
+<p><img *ngIf="photo" [src]="photo" /></p>

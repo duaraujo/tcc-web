@@ -21,7 +21,4 @@ export class ResidentListComponent implements OnInit {
     .subscribe(data => this.residents = data); 
   }
 
-
-
-  
 }

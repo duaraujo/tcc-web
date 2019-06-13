@@ -7,6 +7,7 @@ export class Resident{
         public imagePath: String = '',
         public apartament: string,
         public dtnasc: String,
-        public gender: string
+        public gender: string,
+        public gallery: any[] = []
     ){}
 }

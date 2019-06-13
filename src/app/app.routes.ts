@@ -7,6 +7,7 @@ import { BlocksComponent } from "./view/block/blocks/blocks.component";
 import { ApartmentListComponent } from "./view/apartment/apartment-list/apartment-list.component";
 import { ResidentListComponent } from "./view/resident/resident-list/resident-list.component";
 import { ResidentRegistryComponent } from "./view/resident/resident-registry/resident-registry.component";
+import { ResidentDetailComponent } from './view/resident/resident-detail/resident-detail.component';
 
 
 export const ROUTES : Routes = [
@@ -15,6 +16,16 @@ export const ROUTES : Routes = [
     {path:'blocks',         component: BlocksComponent},
     {path:'blocks/:id',     component: ApartmentListComponent},
     {path:'apartments/:id', component: ResidentListComponent},
+    {
+        path:'apartments/:id', 
+        component: ResidentListComponent,
+        children: [
+            {
+                path: ':id',
+                component: ResidentDetailComponent
+            }
+        ]
+    },
     {path:'about',          component: AboutComponent},
     {path:'monitoring',     component: MonitoringComponent},
     {path:'registration',   component: ResidentRegistryComponent},
