@@ -16,3 +16,11 @@ li {
     display: inline;
     padding: 5px;
 }
+
+.mt{
+    margin-top: 2%;
+}
+.mt-bt{
+    margin-top: 2%;
+    float: right;
+}

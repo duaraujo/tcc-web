@@ -3,13 +3,13 @@
   
   <div class="row">
     <div class="col-md-6">
-      <button type="button" class="col-md-12 btn btn-danger navbar-btn" (click)="openCam()">
+      <button type="button" class="col-md-12 btn btn-primary navbar-btn" (click)="openCam()">
           <span class="glyphicon glyphicon-facetime-video"></span>
         Ligar Camera
       </button>
       <div id="app">
           <video class="col-md-12" #video id="video" width="540" height="330" autoplay></video>
-          <button class="col-md-12 btn btn-danger navbar-btn" id="snap" (click)="capture()">
+          <button class="col-md-12 btn btn-primary navbar-btn" id="snap" (click)="capture()">
               <span class="glyphicon glyphicon-camera"></span>
               
             Capturar foto
@@ -22,9 +22,44 @@
           </ul>
       </div>
     </div>
-    <div class="col-md-6">
 
+
+    <div class="col-md-6 mt">
+
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="name" class="form-control" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="dataNasc">Data de nascimento:</label>
+            <input type="date" class="form-control" id="dataNasc">
+          </div>
+          <div class="form-group">
+            <label for="gender">Sexo:</label>
+            <div id="gender" class="radio">
+                  <label><input type="radio" name="optradio">Masculino</label>
+                  <label><input type="radio" name="optradio">Feminino</label>
+              </div>
+          </div>
+
+
+          <button type="submit" class="mt-bt btn btn-primary float-right">Submit</button>
+        </form>
+  
+  
     </div>
+  
+  
   </div>
 
 </div>
