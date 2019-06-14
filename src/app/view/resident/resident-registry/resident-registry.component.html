@@ -1,45 +1,26 @@
 
 <div class="container-fluid">
-
-  <section class="content-header">
-    <h3>Cadastrar Morador</h3>
-  </section>
-
+  
   <div class="row">
-
+    <div class="col-md-6">
+      <button type="button" class="col-md-12 btn btn-danger navbar-btn" (click)="openCam()">Ligar Camera</button>
+      <div id="app">
+          <video class="col-md-12" #video id="video" width="540" height="330" autoplay></video>
+          <button class="col-md-12 btn btn-danger navbar-btn" id="snap" (click)="capture()">Capturar foto</button>
+          <canvas #canvas id="canvas" width="600" height="400"></canvas>
+          <ul>
+              <li *ngFor="let c of captures">
+                  <img src="{{ c }}" height="75" />
+              </li>
+          </ul>
+      </div>
+    </div>
     <div class="col-md-6">
 
     </div>
-
-    <div class="col-md-6">
-
-    </div>
-
   </div>
 
 </div>
-  
-  <section class="content">
-  
-    <div class="row">
-      
-      
-      <div class="col-sm-6 col-xs-12">
-          <div id="app">
-              <button type="button" class="btn btn-danger navbar-btn" (click)="openCam()">Ligar Camera</button>
-            <video #video id="video" width="480" height="380" autoplay></video>
-              <button type="button" class="btn btn-danger navbar-btn" id="snap" (click)="capture()">Capturar</button>
-              <canvas #canvas id="canvas" width="540" height="380"></canvas> 
-              <ul>
-                  <li *ngFor="let c of captures">
-                      <img src="{{ c }}" height="50" />
-                  </li>
-              </ul>
-            </div>
-            
-      </div>
-  
-    </div>
-  
-  </section>
+
+
 
