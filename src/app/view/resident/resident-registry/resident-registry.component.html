@@ -1,11 +1,23 @@
 
+<div class="container-fluid">
 
-<!-- INíCIO do CONTEÚDO -->
-<section class="content-header">
-    <h3>
-      Cadastrar Morador
-    </h3>
+  <section class="content-header">
+    <h3>Cadastrar Morador</h3>
   </section>
+
+  <div class="row">
+
+    <div class="col-md-6">
+
+    </div>
+
+    <div class="col-md-6">
+
+    </div>
+
+  </div>
+
+</div>
   
   <section class="content">
   
@@ -14,9 +26,9 @@
       
       <div class="col-sm-6 col-xs-12">
           <div id="app">
-              <button (click)="openCam()">Ligar Camera</button>  <br />
-            <div><video #video id="video" width="480" height="380" autoplay></video></div>
-              <div><button id="snap" (click)="capture()">Capturar</button></div>
+              <button type="button" class="btn btn-danger navbar-btn" (click)="openCam()">Ligar Camera</button>
+            <video #video id="video" width="480" height="380" autoplay></video>
+              <button type="button" class="btn btn-danger navbar-btn" id="snap" (click)="capture()">Capturar</button>
               <canvas #canvas id="canvas" width="540" height="380"></canvas> 
               <ul>
                   <li *ngFor="let c of captures">

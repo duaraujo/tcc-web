@@ -261,3 +261,12 @@ body {
 .has-error-block {
   color: #dd4b39;
 }
+
+
+.list-resident{
+  background-color: rgba(248, 226, 226, 0.582) !important; 
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 4px;
+}
