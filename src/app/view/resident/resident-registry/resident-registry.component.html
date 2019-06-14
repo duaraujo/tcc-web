@@ -3,10 +3,17 @@
   
   <div class="row">
     <div class="col-md-6">
-      <button type="button" class="col-md-12 btn btn-danger navbar-btn" (click)="openCam()">Ligar Camera</button>
+      <button type="button" class="col-md-12 btn btn-danger navbar-btn" (click)="openCam()">
+          <span class="glyphicon glyphicon-facetime-video"></span>
+        Ligar Camera
+      </button>
       <div id="app">
           <video class="col-md-12" #video id="video" width="540" height="330" autoplay></video>
-          <button class="col-md-12 btn btn-danger navbar-btn" id="snap" (click)="capture()">Capturar foto</button>
+          <button class="col-md-12 btn btn-danger navbar-btn" id="snap" (click)="capture()">
+              <span class="glyphicon glyphicon-camera"></span>
+              
+            Capturar foto
+          </button>
           <canvas #canvas id="canvas" width="600" height="400"></canvas>
           <ul>
               <li *ngFor="let c of captures">

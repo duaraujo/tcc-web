@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { FileService } from './service/file.service';
 import { ApartmentListComponent } from './view/apartment/apartment-list/apartment-list.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,6 +24,8 @@ import { ResidentRegistryComponent } from './view/resident/resident-registry/res
 import { ReactiveFormsModule } from '@angular/forms';
 import { ResidentDetailComponent } from './view/resident/resident-detail/resident-detail.component';
 import { ResidentsModule } from './view/resident/resident.module';
+import { LoginComponent } from './view/login/login.component';
+import { AuthService } from './view/login/auth.service';
 
 
 @NgModule({
@@ -37,15 +40,17 @@ import { ResidentsModule } from './view/resident/resident.module';
     ApartmentTemplateComponent,
     MonitoringComponent,
     RecognitionComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
+    FormsModule,
     ResidentsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [BlockService, ApartmentService, ResidentService, FileService],
+  providers: [BlockService, ApartmentService, AuthService , ResidentService, FileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

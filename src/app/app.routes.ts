@@ -8,11 +8,13 @@ import { ApartmentListComponent } from "./view/apartment/apartment-list/apartmen
 import { ResidentListComponent } from "./view/resident/resident-list/resident-list.component";
 import { ResidentRegistryComponent } from "./view/resident/resident-registry/resident-registry.component";
 import { ResidentDetailComponent } from './view/resident/resident-detail/resident-detail.component';
+import { LoginComponent } from './view/login/login.component';
 
 
 export const ROUTES : Routes = [
 
     {path:'',               component: HomeComponent},
+    {path:'login',         component: LoginComponent},    
     {path:'blocks',         component: BlocksComponent},
     {path:'blocks/:id',     component: ApartmentListComponent},
     {path:'apartments/:id', component: ResidentListComponent},
