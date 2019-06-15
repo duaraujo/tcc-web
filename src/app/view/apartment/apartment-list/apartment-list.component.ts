@@ -13,7 +13,7 @@ import { Block } from 'app/model/block.model';
 export class ApartmentListComponent implements OnInit {
 
   block: Block
-  apartments: Apartment[]
+  apartments: Apartment[] = []
 
   constructor(private serviceBlock: BlockService,
               private route: ActivatedRoute,

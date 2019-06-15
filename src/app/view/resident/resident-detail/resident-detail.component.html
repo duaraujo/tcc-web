@@ -12,7 +12,7 @@
         <p>Email: {{ resident?.email }}</p>
         <p>Telefone: {{ resident?.phone }}</p>
         <p>Data de nascimento: {{ resident?.dataNasc | date: 'dd/MM/yyyy' }}</p>
-        <p>Sexo: {{ resident?.gender }} </p>
+        <p>Sexo: {{ resident?.gender == 'M' ? 'Masculino' : 'Feminino'  }} </p>
     </div>
     <div class="col-md-6">
       <p><img *ngIf="photo" [src]="photo" /></p>
