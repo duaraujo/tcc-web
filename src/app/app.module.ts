@@ -1,3 +1,4 @@
+import { ResidentListComponent } from './view/resident/resident-list/resident-list.component';
 import { FormsModule } from '@angular/forms';
 import { FileService } from './service/file.service';
 import { ApartmentListComponent } from './view/apartment/apartment-list/apartment-list.component';
@@ -17,15 +18,12 @@ import { BlockService } from './service/block.service';
 import { ApartmentService } from './service/apartment.service';
 import { ApartmentTemplateComponent } from './view/apartment/apartment-template/apartment-template.component';
 import { MonitoringComponent } from './view/monitoring/monitoring.component';
-import { ResidentListComponent } from './view/resident/resident-list/resident-list.component';
 import { ResidentService } from './service/resident.service';
-import { RecognitionComponent } from './view/recognition/recognition/recognition.component';
-import { ResidentRegistryComponent } from './view/resident/resident-registry/resident-registry.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ResidentDetailComponent } from './view/resident/resident-detail/resident-detail.component';
-import { ResidentsModule } from './view/resident/resident.module';
 import { LoginComponent } from './view/login/login.component';
 import { AuthService } from './view/login/auth.service';
+import { ResidentDetailComponent } from './view/resident/resident-detail/resident-detail.component';
+import { ResidentRegistryComponent } from './view/resident/resident-registry/resident-registry.component';
 
 
 @NgModule({
@@ -39,15 +37,16 @@ import { AuthService } from './view/login/auth.service';
     ApartmentListComponent,
     ApartmentTemplateComponent,
     MonitoringComponent,
-    RecognitionComponent,
     LoginComponent,
+    ResidentDetailComponent,
+    ResidentListComponent,
+    ResidentRegistryComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
     FormsModule,
-    ResidentsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [BlockService, ApartmentService, AuthService , ResidentService, FileService],

@@ -25,6 +25,7 @@ export class ResidentRegistryComponent implements OnInit {
   public galleryBlob: Array<File> = [];
 
   form: FormGroup;
+  success: boolean = false;
 
   public constructor(
     private residentService: ResidentService,
@@ -47,14 +48,20 @@ export class ResidentRegistryComponent implements OnInit {
 
           }
         )
+        this.success = true;
       }
     )
   }
 
-  removePhoto(i){
+  removePhoto(){
+    this.gallery = [];
+    this.galleryBlob = [];
+  }
+
+  /* removePhoto(i){
     this.gallery.splice(i,1);
     this.galleryBlob.splice(i,1);
-  }
+  } */
 
   public openCam() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {

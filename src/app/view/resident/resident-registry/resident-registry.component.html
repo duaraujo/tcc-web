@@ -1,7 +1,10 @@
 <div class="container-fluid">
+  <div class="alert alert-success"  role="alert" *ngIf="success">
+    <strong>Sucesso!</strong> Cadastro realizado!
+  </div>
   <div class="row">
     <div class="col-md-6">
-      <button
+      <button 
         type="button"
         class="col-md-12 btn btn-primary navbar-btn"
         (click)="openCam()"
@@ -30,8 +33,10 @@
         <canvas #canvas id="canvas" width="600" height="400"></canvas>
         <ul>
           <li *ngFor="let photo of gallery; let i = index">
-            <img src="{{ photo }}" height="75" />
-            <button type="submit" (click)="removePhoto(i)" class="mt-bt btn btn-primary">
+            <img src="{{ photo }}" height="75" />            
+          </li>
+          <li>
+            <button type="submit" (click)="removePhoto()" class="mt-bt btn btn-primary">
               excluir
             </button>
           </li>
@@ -40,7 +45,7 @@
     </div>
 
     <div class="col-md-6 mt">
-      <form action="#">
+      <form *ngIf="!success" >
           <div class="form-group">
               <label for="apartamento">Apartamento</label>
               <select [(ngModel)]="resident.apartment" name="apartment" class="form-control" id="apartamento">
