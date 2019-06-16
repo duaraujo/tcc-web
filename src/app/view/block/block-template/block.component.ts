@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Block } from '../../model/block.model';
+import { Block } from '../../../model/block.model';
 
 @Component({
   selector: 'app-block',

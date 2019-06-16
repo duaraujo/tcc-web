@@ -3,7 +3,7 @@ import {  Routes } from "@angular/router";
 
 import { HomeComponent } from "./view/home/home.component";
 import { AboutComponent } from "./view/about/about.component";
-import { BlocksComponent } from "./view/block/blocks/blocks.component";
+import { BlocksComponent } from "./view/block/block-list/blocks.component";
 import { ApartmentListComponent } from "./view/apartment/apartment-list/apartment-list.component";
 import { ResidentListComponent } from "./view/resident/resident-list/resident-list.component";
 import { ResidentRegistryComponent } from "./view/resident/resident-registry/resident-registry.component";

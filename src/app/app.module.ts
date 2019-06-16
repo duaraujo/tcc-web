@@ -7,13 +7,13 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { BlocksComponent } from './view/block/blocks/blocks.component';
+import { BlocksComponent } from './view/block/block-list/blocks.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './view/header/header.component';
 import { HomeComponent } from './view/home/home.component';
 import { AboutComponent } from './view/about/about.component'
 import { ROUTES } from './app.routes';
-import { BlockComponent } from './view/block/block.component';
+import { BlockComponent } from './view/block/block-template/block.component';
 import { BlockService } from './service/block.service';
 import { ApartmentService } from './service/apartment.service';
 import { ApartmentTemplateComponent } from './view/apartment/apartment-template/apartment-template.component';
