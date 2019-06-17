@@ -39,15 +39,14 @@ export class ResidentRegistryComponent implements OnInit {
   }
 
   public save(){
-    this.residentService.saveGallery(this.galleryBlob).subscribe(
+    this.residentService.saveGallery(this.galleryBlob, this.resident.name).subscribe(
       (data: Response) => {
         this.resident.gallery = data.json();
-        console.log(this.resident);
         this.residentService.save(this.resident).subscribe(
           data => {
 
           }
-        )
+        ) 
         this.success = true;
       }
     )
@@ -57,11 +56,6 @@ export class ResidentRegistryComponent implements OnInit {
     this.gallery = [];
     this.galleryBlob = [];
   }
-
-  /* removePhoto(i){
-    this.gallery.splice(i,1);
-    this.galleryBlob.splice(i,1);
-  } */
 
   public openCam() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -88,9 +82,39 @@ export class ResidentRegistryComponent implements OnInit {
     for (let i = 0; i < byteString.length; i++) {
       int8Array[i] = byteString.charCodeAt(i);
     }
-
     let blob = new Blob([int8Array], {type: contentType});
     let file: File = <File>blob;
     return file;
   }
+
+  base64ToFile(dataURI){
+    const byteString = atob(dataURI.split(',')[1]);
+    const mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0]
+    const ab = new ArrayBuffer(byteString.length);
+    const ia = new Uint8Array(ab);
+    for (let i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+    const blob = new Blob([ab], { 'type': mimeString });
+    blob['lastModifiedDate'] = (new Date()).toISOString();
+    blob['name'] = 'file.png';
+    console.log(blob['name']);
+    return <File>blob;
+  }
+
+
+
+  public uploadMultipleFiles(files){
+    let formData = new FormData();
+    for(let i = 0; i < files.length; i++) {
+      formData.append("files", files[i]);
+    } 
+  }
+
+
+
+    /* removePhoto(i){
+    this.gallery.splice(i,1);
+    this.galleryBlob.splice(i,1);
+  } */
 }

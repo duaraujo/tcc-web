@@ -39,11 +39,14 @@ export class ResidentService {
     return this.http.delete(`${API_BACKEND}residents/${id}`)
   }
 
-  saveGallery(gallery: File[]){
+  saveGallery(gallery: File[], name: string){
     const formData: FormData = new FormData();
     for(let i=0; i < gallery.length; i++){
       formData.append('files',gallery[i]);
     }
-    return this.http.post(`${API_BACKEND}file/uploadMultipleFiles`, formData);
+    return this.http.post(`${API_BACKEND}file/uploadMultipleFiles/${name}`, formData);
   }
+
+
+  
 }

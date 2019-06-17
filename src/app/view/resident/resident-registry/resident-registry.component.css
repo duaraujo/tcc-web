@@ -24,3 +24,18 @@ li {
     margin-top: 2%;
     float: right;
 }
+
+.ng-invalid.ng-touched:not(form){
+    border: 1px solid red;
+}
+
+.msg-error {
+    margin-top: -2%;
+    margin-bottom: 2%;
+    background-color: #dd4b39c7 !important;
+    opacity: 0.8;
+    width: 100%;
+    padding: 4px;
+    color: white;
+    border-radius: 4px;
+}

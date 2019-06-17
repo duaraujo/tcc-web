@@ -12,8 +12,8 @@ export class FileService {
 
     constructor(private http: Http) { }
 
-    findOne(id: any) {
-        return this.http.get(`${API_BACKEND}file/${id}`, { responseType: ResponseContentType.Blob })
+    findOne(id: any, name: string) {
+        return this.http.get(`${API_BACKEND}file/${id}/${name}`, { responseType: ResponseContentType.Blob })
         .catch(ErrorHandler.handleEnrror)
     }
 

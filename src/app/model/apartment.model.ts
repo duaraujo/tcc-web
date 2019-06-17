@@ -1,9 +1,8 @@
+import { Resident } from './resident.model';
 
-export interface Apartment{
-
+export class Apartment{
     id: string;
     number: string;
-    imagePath: string;
     blockId: string;
-
+    residents: Resident[] = []
 }

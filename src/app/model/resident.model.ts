@@ -4,7 +4,6 @@ export class Resident {
     public name: string;
     public email: string;
     public phone: string;
-    public imagePath: String = '';
     public apartment: Apartment;
     public dataNasc: String;
     public gender: string;

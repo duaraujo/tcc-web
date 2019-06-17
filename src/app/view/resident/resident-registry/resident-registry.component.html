@@ -45,24 +45,27 @@
     </div>
 
     <div class="col-md-6 mt">
-      <form *ngIf="!success" >
+      <form>
           <div class="form-group">
               <label for="apartamento">Apartamento</label>
-              <select [(ngModel)]="resident.apartment" name="apartment" class="form-control" id="apartamento">
+              <select required [(ngModel)]="resident.apartment" name="apartment" class="form-control" id="apartamento">
                   <option *ngFor="let a of apartments" [ngValue]="a">{{a.number}}</option>               
               </select>
             </div>
         <div class="form-group">
           <label for="name">Nome:</label>
-          <input type="name" name="name" [(ngModel)]="resident.name" class="form-control" id="name" />
+          <input required type="name" name="name" [(ngModel)]="resident.name" class="form-control" id="name" />
+        </div>
+        <div class="msg-error" role="alert" *ngIf="!resident.name">
+          Nome é obrigatório
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" name="email" [(ngModel)]="resident.email" class="form-control" id="email" />
+          <input type="email" placeholder="email@gmail.com" name="email" [(ngModel)]="resident.email" class="form-control" id="email" />
         </div>
         <div class="form-group">
           <label for="phone">Telefone:</label>
-          <input type="text" name="phone" [(ngModel)]="resident.phone" class="form-control" id="phone" />
+          <input type="text" placeholder="(99)99999-9999" name="phone" [(ngModel)]="resident.phone" class="form-control" id="phone" />
         </div>
         <div class="form-group">
           <label for="dataNasc">Data de nascimento:</label>

@@ -15,7 +15,7 @@
         <p>Sexo: {{ resident?.gender == 'M' ? 'Masculino' : 'Feminino'  }} </p>
     </div>
     <div class="col-md-6">
-      <p><img *ngIf="photo" [src]="photo" /></p>
+      <p><img *ngIf="photo" class="img-responsive" alt="Foto do usuário" [src]="photo" /></p>
     </div>
   </div>
 

@@ -39,7 +39,7 @@ export class ResidentDetailComponent implements OnInit, OnDestroy {
 
   getPhoto() {
     if(this.resident.gallery.length > 0 ){
-      this.fileService.findOne(this.resident.gallery[0].id).subscribe((data: Response) => {
+      this.fileService.findOne(this.resident.gallery[0].id, this.resident.name).subscribe((data: Response) => {
         this.createImageFromBlob(data.blob());
       });
     }
